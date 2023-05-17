@@ -1,0 +1,60 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+html{
+    font-family: 'Outfit', sans-serif;
+}
+/* Defining root  */
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: var(--Light-gray);
+}
+
+main .card-container{
+    width: 18rem;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--White);
+    border-radius: .875rem;
+}
+main .card-container img{
+    width: 100%;
+    border-radius: .65rem;
+    margin-bottom: 1rem;
+}
+main h4{
+    font-size: 1.26rem;
+    font-weight: 700;
+    width: 100%;
+    margin: 0 auto .8rem;
+}
+
+main .card-container p{
+    font-size: 14px;
+    color: var(--Grayish-blue);
+    font-weight: 400;
+    margin: 0 auto 1rem;
+    width: 90%;
+
+}
+
+@media(min-width:375px){
+    main{
+        min-width: 18rem;
+    }
+}
